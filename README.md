@@ -15,4 +15,10 @@ Debian packages were compiled via
     --initrd --us --uc --cross-compile - --arch=i386 --revision=1 \
     --arch-in-name kernel_image
 
+and
+
+    DEB_HOST_ARCH=i386 ARCH=i386 CONCURRENCY_LEVEL=4 make-kpkg \
+    --initrd --us --uc --cross-compile - --arch=i386 --revision=1 \
+    --arch-in-name kernel_headers 
+
 No guarantee for anything. Use at own risk.
